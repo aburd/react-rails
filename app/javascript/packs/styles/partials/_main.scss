@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-overflow-scrolling: touch;
+  vertical-align: middle;
+}
+
+body {
+  min-height: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-justify: inter-ideograph;
+  -webkit-font-smoothing: antialiased;
+  zoom: 1;
+  color: #3a3956;
+  font-family: 'Noto Sans Japanese', 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #3a3930;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  margin: 0 auto 3px;
+  box-shadow: 0 2px 1px #eee;
+  position: relative;
+  height: 96px;
+  line-height: 48px;
+}
+
+img,
+audio,
+video {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+form {
+  display: block;
+  margin-top: 0;
+}
+
+input {
+  border: none;
+  background: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  border-radius: 50px;
+  background: #E7E6FD;
+  width: 38px;
+  margin: 0 8px;
+  &.off {
+    background: #E6E6E6;
+  }
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #8681F7;
+}
+
+input[type='range'].off::-webkit-slider-thumb {
+  background: #B3B3B3;
+}
+
+input[type='range']::-webkit-slider-thumb:hover {
+  // background: $color_main;
+}
+
+input[type='range']::-webkit-slider-thumb:active {
+  opacity: 0.7;
+}
+
+input[type="checkbox"],
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+select {
+  border: none;
+  background-color: #fff;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.fixed .header_bottom {
+  position: fixed;
+  box-shadow: 0 2px 1px #eee;
+  z-index: 10;
+}
+
+.fixed .submenu {
+  position: fixed;
+  top: 2px;
+  left: 0;
+  bottom: 0;
+  margin: 49px 0 0;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.form_checkbox_input {
+  display: none;
+
+  + label {
+    background-image: url(/images/icon_selectbox_empty.png);
+  }
+
+  &:checked + label {
+    background-image: url(/images/icon_selectbox_checked.png);
+  }
+}

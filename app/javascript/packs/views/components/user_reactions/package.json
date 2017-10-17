@@ -1,0 +1,6 @@
+{
+  "name": "user_reactions",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./user_reactions.jsx"
+}

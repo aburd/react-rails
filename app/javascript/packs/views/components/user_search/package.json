@@ -1,0 +1,6 @@
+{
+  "name": "user_search",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./user_search.jsx"
+}
