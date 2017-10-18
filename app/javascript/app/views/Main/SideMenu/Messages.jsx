@@ -10,10 +10,9 @@ const Message = styled.div`
 
 export default ({ messages, messagesArr }) => {
   const theMessages = messages.map(messageId => messagesArr[messageId]);
-  console.log(theMessages);
-  return theMessages.map(message => {
+  return theMessages.map((message, i) => {
     return (
-      <Message>
+      <Message key={`message-${i}-sidebar`}>
         <p>{message.text}</p>
       </Message>
     );

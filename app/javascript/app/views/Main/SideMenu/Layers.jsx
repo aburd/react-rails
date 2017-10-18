@@ -10,9 +10,9 @@ const Layer = styled.div`
 
 export default ({ layers, blocks, messages }) => {
   const theLayers = Object.keys(layers).map(key => layers[key]);
-  return theLayers.map(layer => {
+  return theLayers.map((layer, i) => {
     return (
-      <Layer>
+      <Layer key={`layer-${i}-sidebar`}>
         <p>> {layer.name}</p>
         <Blocks messages={messages} blocks={layer.blocks} blocksArr={blocks} />
       </Layer>

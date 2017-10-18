@@ -15,9 +15,9 @@ const libFunction = (idArray, elementArray) => {
 
 export default ({ blocks, blocksArr, messages }) => {
   const theBlocks = libFunction(blocks, blocksArr);
-  return theBlocks.map(block => {
+  return theBlocks.map((block, i) => {
     return (
-      <Block>
+      <Block key={`blocks-${i}-sidebar`}>
         <p>{block.name}</p>
         <Messages messages={block.messages} messagesArr={messages} />
       </Block>

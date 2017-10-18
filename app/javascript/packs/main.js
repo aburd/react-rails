@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom';
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
-import DevTools from './DevTools';
 import { createEpicMiddleware } from 'redux-observable';
 import { IntlProvider, addLocaleData } from 'react-intl';
 import en from 'react-intl/locale-data/en';
 import ja from 'react-intl/locale-data/ja';
-import Routes from './Routes';
-import reducer from './views/reducer';
+import DevTools from '../app/DevTools';
+import Routes from '../app/Routes';
+import reducer from '../app/views/reducer';
 // import epic from './views/epic';
-import { flattenMessages } from './lib/intl';
-import messages from './i18n/messages';
+import { flattenMessages } from '../app/lib/intl';
+import messages from '../app/i18n/messages';
 
 addLocaleData([...en, ...ja]);
 
@@ -20,6 +20,7 @@ addLocaleData([...en, ...ja]);
 
 let enhancer;
 const { ENVIRONMENT } = process.env;
+
 // create redux store
 if (ENVIRONMENT === 'development') {
   enhancer = compose(
