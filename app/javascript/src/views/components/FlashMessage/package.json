@@ -1,6 +1,0 @@
-{
-  "name": "FlashMessage",
-  "version": "0.0.0",
-  "private": true,
-  "main": "./FlashMessage.jsx"
-}

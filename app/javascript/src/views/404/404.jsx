@@ -5,8 +5,6 @@ import styled from 'styled-components';
 import { injectIntl, intlShape } from 'react-intl';
 import { color, fontsize } from '../StyleVariables';
 
-const fanpCharacter = require('images/character.png');
-
 const NotFoundContainer = styled.div`
   width: 100%;
   height: 100vh;
@@ -53,9 +51,6 @@ const NotFound = ({ intl, message }) => {
         <p>
           <Link to="/dashboard/group">{toChatbots}</Link>
         </p>
-      </div>
-      <div>
-        <img src={fanpCharacter} alt="fanp character" />
       </div>
     </NotFoundContainer>
   );
