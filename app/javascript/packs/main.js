@@ -16,8 +16,6 @@ import messages from './i18n/messages';
 
 addLocaleData([...en, ...ja]);
 
-require('./styles/index.scss');
-
 // const epicMiddleware = createEpicMiddleware(epic);
 
 let enhancer;

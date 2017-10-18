@@ -1,0 +1,239 @@
+// variable
+$default_size: 16;
+
+// colors:font
+$color_font: #3a3956;
+$color_font_pale: rgba($color_font, 0.6);
+$color_font_user_comment_date: #9b9b9b;
+
+// colors:icons
+$color_icon_default: rgba($color_font, 0.4);
+// colors:text
+$color_text: #3a3956;
+$color_text_pale: rgba($color_text, 0.6);
+// colors:placeholder
+$color_placeholder: rgba($color_font, 0.2);
+
+// colors border
+$color_submenu_border: #d8d8e0;
+$color_border_title_left: rgba(58, 57, 87, 0.1);
+$color_border_pale: rgba(200, 201, 202, 0.3);
+
+// colors
+$color_main: #8a7dff;
+$color_accent: #58e2c5;
+$color_bg_lighter: #fff;
+$color_bg_darker: #fafafc;
+$color_bg_help: rgba($color_font, 0.9);
+$color_bg_select_hover: rgba($color_font, 0.06);
+$color_error: #e4008b;
+$color_border: rgba($color_font, 0.4);
+
+$color_hover_delete: #ea008f;
+
+// Chat Status
+$color_derivered: #8a7dff;
+$color_draft: #ffb64e;
+$color_awaiting: #7fe7fb;
+
+// colors:label
+$color_label_1: $color_main;
+$color_label_2: #ffb64e;
+$color_label_3: #7fe7fb;
+
+$color_selected: rgba(40, 142, 247, 0.4);
+$color_selected_save_button: rgba(40, 142, 247, 0.7);
+$color_selected_buttons: rgba(40, 142, 247, 0.15);
+
+// colors:Gender
+$color_man: #51a9f0;
+$color_woman: #ff8ecc;
+$color_other: #ebebee;
+
+// colors: submenu
+$color_submenu_border: #d8d8e0;
+$color_border_title_left: rgba(58, 57, 87, 0.1);
+
+// color: Brand
+$color_messanger: #288ef7;
+$color_facebook: #3b5998;
+
+// colors:設定ページのセクション枠線
+$color_border_setting_section: #edf0f5;
+
+// width
+$width_submenu: 240px;
+$width_section: 960px;
+
+// width container
+$width_main_container: 60rem;
+$width_group_settings_container: 400px;
+$width_group_settings_section: 512px;
+
+// colors
+$color_section_bg: #fff;
+$color_section_border: #edf0f5;
+$color_border_analytics: rgba(58, 57, 86, 0.1);
+
+// colors:chatmagazine
+$color_hover_file: rgba(58, 57, 86, 0.89);
+
+// ヘッダーのheight
+$height_header: 48px;
+$width_context_size: #{ (264/$default_size) }rem;
+
+// border-radius：ユーザーインフォのフォーム
+$border_radius_form: 4px;
+
+//=================================
+//  共通クラス
+//=================================
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-overflow-scrolling: touch;
+  vertical-align: middle;
+}
+
+html,
+body {
+  min-height: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-justify: inter-ideograph;
+  -webkit-font-smoothing: antialiased;
+  zoom: 1;
+  color: $color_font;
+  font-family: 'Noto Sans Japanese', 'Roboto', Arial;
+  font-size: #{$default_size}px;
+}
+
+img,
+audio,
+video {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: #3a3930;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  border: none;
+  background: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type='checkbox'],
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  border-radius: 50px;
+  background: #e7e6fd;
+  width: 38px;
+  margin: 0 8px;
+  &.off {
+    background: #e6e6e6;
+  }
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #8681f7;
+}
+
+input[type='range'].off::-webkit-slider-thumb {
+  background: #b3b3b3;
+}
+
+input[type='range']::-webkit-slider-thumb:hover {
+  // background: $color_main;
+}
+
+input[type='range']::-webkit-slider-thumb:active {
+  opacity: 0.7;
+}
+
+label {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+select {
+  border: none;
+  background-color: #fff;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+textarea {
+  resize: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: $color_placeholder;
+}
+
+:-moz-placeholder {
+  color: $color_placeholder;
+}
+
+::-moz-placeholder {
+  color: $color_placeholder;
+}
+
+:-ms-input-placeholder {
+  color: $color_placeholder;
+}
+
+template {
+  display: none;
+}
+
+.clearfix {
+  zoom: 1;
+
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+select {
+  &:focus {
+    outline: none;
+  }
+}

@@ -24,3 +24,16 @@
 /public/packs
 /public/packs-test
 /node_modules
+
+# Ignore encrypted secrets key file.
+.env
+config/leml.key
+
+# Ignore ruby gems
+/vendor/bundle
+
+# Ignore Byebug command history file.
+.byebug_history
+
+# Ignore OSX Files
+.DS_Store
