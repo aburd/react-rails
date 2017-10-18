@@ -49,7 +49,7 @@ ReactDOM.render(
     <Provider store={store}>
       <span>
         <Routes />
-        <DevTools />
+        {ENVIRONMENT === 'development' ? <DevTools /> : null}
       </span>
     </Provider>
   </IntlProvider>,
