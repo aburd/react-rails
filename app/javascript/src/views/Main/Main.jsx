@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import SideMenu from './SideMenu';
@@ -9,6 +10,7 @@ class Main extends Component {
     return (
       <div>
         <SideMenu layers={layers} blocks={blocks} messages={messages} />
+        <Test></Test>
       </div>
     );
   }

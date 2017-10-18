@@ -7,12 +7,12 @@ import { createEpicMiddleware } from 'redux-observable';
 import { IntlProvider, addLocaleData } from 'react-intl';
 import en from 'react-intl/locale-data/en';
 import ja from 'react-intl/locale-data/ja';
-import DevTools from '../app/DevTools';
-import Routes from '../app/Routes';
-import reducer from '../app/views/reducer';
+import DevTools from '../src/DevTools';
+import Routes from '../src/Routes';
+import reducer from '../src/views/reducer';
 // import epic from './views/epic';
-import { flattenMessages } from '../app/lib/intl';
-import messages from '../app/i18n/messages';
+import { flattenMessages } from '../src/lib/intl';
+import messages from '../src/i18n/messages';
 
 addLocaleData([...en, ...ja]);
 
