@@ -8,8 +8,10 @@ import NotFound from './views/404';
 const Routes = () => (
   <Router history={browserHistory}>
     <Route>
-      <IndexRoute component={Main} />
-      <Route path="*" component={NotFound} />
+      <Route path="/dashboard">
+        <IndexRoute component={Main} />
+        <Route path="*" component={NotFound} />
+      </Route>
     </Route>
   </Router>
 );
